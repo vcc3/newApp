@@ -48,58 +48,27 @@ require('layout/header.php');
     <!-- Page Content -->
     <div class="container">
 
-        <!-- Jumbotron Header -->
+       <!-- Jumbotron Header -->
         <header class="jumbotron hero-spacer">
-            <h1> Welcome to CodeHub!</h1>            
-            <p><a class="btn btn-primary btn-large">Call to action!</a>
-            </p>
+            <h2> Welcome to CodeHub!</h2>            
+            <!-- Single button -->
+                <div class="btn-group">
+                <p> Use the drop down to navigate to your desired programming language page.</p>
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Select Programming Language <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="javaLanguage.php">Java</a></li>
+                    <li><a href="phpLanguage.php" >PHP</a></li>
+                    <li><a href="javascriptLanguage.php">Javascript</a></li>
+                    <li><a href="pythonLanguage.php">Python</a></li>
+                    <li><a href="webdevLanguage.php" >HTML/CSS</a></li>
+                    <li><a href="cLanguage.php">C</a></li>
+                    <li role="separator" class="divider"></li>
+                  
+                  </ul>
+                </div>                        
         </header>
-       <div class="card" style="width: 10rem; float:left;">
-      <div class="card-block">
-        
-        
-        <a href="getPHP.class.php" class="btn btn-primary">PHP</a>
-      </div>
-    </div>
-    <div class="card" style="width: 10rem; float:left;">
-      <div class="card-block">
-       
-       
-        <a href="getJava.class.php" class="btn btn-primary">Java</a>
-      </div>
-    </div>
-    <div class="card" style="width: 10rem; float:left;">
-      <div class="card-block">
-       
-       
-        <a href="getJavaScript.class.php" class="btn btn-primary">JavaScript</a>
-      </div>
-    </div>
-     
-     <div class="card" style="width: 10rem; float:left;">
-      <div class="card-block">
-        
-       
-        <a href="getPython.class.php" class="btn btn-primary">Python</a>
-      </div>
-    </div>
-   <div class="card" style="width: 10rem; float:left;">
-      <div class="card-block">
-       
-       
-        <a href="getWebDev.class.php" class="btn btn-primary">HTML/CSS</a>
-      </div>
-    </div>
-    <div class="card" style="width: 10rem; float:left;">
-      <div class="card-block">
-       
-       
-        <a href="getC.class.php" class="btn btn-primary">C</a>
-      </div>
-    </div>
-    <br>
-    <br>
-    <hr>
        
        <!-- Projects Row -->
         <div class="row">
