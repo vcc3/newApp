@@ -9,25 +9,49 @@ $title = 'Members Page';
 //include header template
 require('layout/header.php'); 
 ?>
+  <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="lihomepage.php">CodeHub</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.php">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.php">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.php">Contact</a>
+                    </li>
+                     <li>
+                        <a href="memberpage.php">Profile</a>
+                    </li>
+                    <li>
+                      <a href="logout.php">Logout</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
-
-                       <div id ="wrapper">
-                          <div id ="header">
-                              <div id="logo">       
-                              </div>  
-                          	  	<div id="menu">
-                                   <ul>
-                                    <li><a href ='lihomepage.php'>Home</a>|</li>                                   
-                                    <li><a href ='#'>About</a>|</li>
-                                    <li><a href ='#'>News</a>|</li>
-                                    <li><a href ='memberpage.php'>Profile</a></li>
-                                    <li><a href ='logout.php'>LogOut</a></li
-                                  </ul>
-                                </div>
-                          <div id ="ccontent">                                
-                               <h2>Profile Page - Welcome <?php echo $_SESSION['username']; ?></h2>
-                              
-                                    <a href ='table.php'>Table of Users</a>|
+    <!-- Page Content -->
+    <div class="container">
+                                      
+                               <h2>Profile Page - Welcome <?php echo $_SESSION['username']; ?></h2>                              
+                                    
                                     <a href ='editprofile.php'>Edit Profile</a>
                 
                               
@@ -55,7 +79,7 @@ require('layout/header.php');
                                   echo "<p>First Name:"       . $row['first_name']. "</p>";
                                   echo "<p>Last Name:"        . $row['last_name'] . "</p>";
                                   echo "<p>Age:"              . $row['age']       . "</p>";  
-								                  echo "<p>Bio:"              . $row['info']      . "</p>";
+								                  
                                   }
                                 
                                                             
@@ -66,8 +90,14 @@ require('layout/header.php');
                                 </div>
                                   
                             </div>
-                          </div>
-                       </div>
+                   </div>         
+
+
+                               
+                          	  	
+                         
+                            
+                        
 <?php 
 //include header template
 require('layout/footer.php'); 
