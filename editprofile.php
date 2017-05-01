@@ -42,7 +42,7 @@ require('layout/header.php');
          
                                 <img width='100px' height='100px' src='img/pro.jpg'>
                                 <p> <input type="file" name="myFile"></p>
-                                  <p>First Name:<input type="text" name="first_name" ></p>
+                                <p>First Name:<input type="text" name="first_name" ></p>
                                 <p>Last Name: <input type="text" name="last_name" ></p>
                                 <p>Age: <input type="number" name="age"></p>
                                 <p>Bio: <input type="text" name="info" ></p>
